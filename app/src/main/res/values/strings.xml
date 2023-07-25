@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TWG</string>
+    <string name="login">Login</string>
+
+    <!--    textField header-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+
+    <!--    textField hint text-->
+    <string name="first_name_hint">Your First Name</string>
+    <string name="last_name_hint">Your Last Name</string>
+    <string name="email_hint">Your Email</string>
+    <string name="password_hint">Your Password</string>
+</resources>
