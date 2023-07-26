@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/login"
+        android:id="@+id/txt2"
         android:includeFontPadding="false"
         android:layout_marginBottom="36dp"
         android:textAppearance="@style/header" />
@@ -34,9 +35,10 @@
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         app:hintEnabled="false"
+        android:id="@+id/txtFieldEmail"
         app:startIconDrawable="@drawable/baseline_email_24"
-        android:layout_marginBottom="18dp"
-        >
+        android:layout_marginBottom="18dp">
+
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,7 +53,6 @@
         android:text="@string/password"
         android:layout_marginBottom="6dp"
         android:textAppearance="@style/textFieldHeader"
-        android:includeFontPadding="false"
         />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -59,6 +60,7 @@
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         app:hintEnabled="false"
+        android:id="@+id/txtFieldPassword"
         app:startIconDrawable="@drawable/baseline_lock_24"
         android:layout_marginBottom="18dp"
         app:passwordToggleEnabled="true"
@@ -74,23 +76,127 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
         <CheckBox
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Remember me"
+            android:text="@string/remember"
+            android:id="@+id/chkRemember"
+            android:textColor="@color/text_place_holder"
+            android:textSize="12sp"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/poppins_medium"
             android:layout_weight="1"
             />
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forgot Password?"
-            android:includeFontPadding="false"
+            android:text="@string/forgot_password"
+            android:clickable="true"
+            android:id="@+id/txtBtnForget"
             android:textAppearance="@style/textButton"
-            android:backgroundTint="@color/primary_color"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:id="@+id/btnLogin"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/primary_color"
+        android:text="@string/login"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:fontFamily="@font/poppins_semibold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:dividerColor="@color/text_place_holder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or_continue"
+            android:gravity="center"
+            android:textAppearance="@style/textPlaceholder"
+            android:textSize="14sp"
+            android:layout_marginHorizontal="10dp"
             />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:dividerColor="@color/text_place_holder"/>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgFaceBookLogo"
+            android:clickable="true"
+            android:contentDescription="@string/facebook_icon"
+            android:padding="18dp"
+            android:src="@drawable/facebook_logo"
+            android:focusable="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:id="@+id/imgGoogleLogo"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/google_icon"
+            android:layout_marginHorizontal="24dp"
+            android:src="@drawable/google_logo_1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/imgLinkedinLogo"
+            android:contentDescription="@string/linkedin_icon"
+            android:padding="18dp"
+            android:src="@drawable/linkedin_logo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="bottom|center_horizontal"
+        android:layout_weight="1"
+        android:layout_marginVertical="40dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/textPlaceholder"
+            android:text="@string/dont_have_acct"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="5dp"
+            android:textAppearance="@style/textButton"
+            android:text="@string/sign_up"/>
+    </LinearLayout>
 </LinearLayout>

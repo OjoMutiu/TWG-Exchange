@@ -13,4 +13,18 @@
     <string name="last_name_hint">Your Last Name</string>
     <string name="email_hint">Your Email</string>
     <string name="password_hint">Your Password</string>
+
+    <!--    button-->
+    <string name="remember">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up">Signup</string>
+
+    <!--    other text-->
+    <string name="or_continue">or continue with</string>
+    <string name="dont_have_acct">Don\'t have account?</string>
+    <string name="facebook_icon">FaceBook Icon</string>
+    <string name="google_icon">Google Icon</string>
+    <string name="linkedin_icon">Linkedin Icon</string>
+
+
 </resources>
