@@ -17,14 +17,21 @@
     <!--    button-->
     <string name="remember">Remember me</string>
     <string name="forgot_password">Forgot Password?</string>
-    <string name="sign_up">Signup</string>
+    <string name="sign_up">Sign up</string>
+    <string name="Continue">Continue</string>
 
     <!--    other text-->
     <string name="or_continue">or continue with</string>
     <string name="dont_have_acct">Don\'t have account?</string>
+    <string name="already_have_acct">Already signed up?</string>
     <string name="facebook_icon">FaceBook Icon</string>
     <string name="google_icon">Google Icon</string>
     <string name="linkedin_icon">Linkedin Icon</string>
+    <string name="terms_agreement">By signing up you agree to our</string>
+    <string name="terms_and_condition">Terms and Condition</string>
+    <string name="lower_and">and</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
 
 
 </resources>
